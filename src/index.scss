@@ -1,0 +1,20 @@
+@import '@elastic/eui/src/theme_amsterdam_dark.scss';
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include euiHeaderAffordForFixed;
+}
+
+@include euiBreakpoint('m', 'l', 'xl') {
+  .euiHeader--dark {
+    border-bottom: $euiBorderThin;
+  }
+
+  .euiPageSideBar {
+    border-right: $euiBorderThin;
+    padding: $euiSize;
+  }
+}
